@@ -1,0 +1,8 @@
+@import "tailwindcss";
+@plugin "@iconify/tailwind4";
+@import '../style/valila.css';
+
+@theme {
+    --font-sans: 'Inter', system-ui, sans-serif;
+
+}

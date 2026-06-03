@@ -1,0 +1,19 @@
+export const getTiket = async (token, id) => {
+    return await fetch(`${import.meta.env.VITE_API_PATH}/admin/ticket/${id}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': token
+        },
+    }) 
+}
+
+export const getAllTiket = async (token) => {
+    return await fetch(`${import.meta.env.VITE_API_PATH}/admin/tickets`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': token
+        },
+    }) 
+}

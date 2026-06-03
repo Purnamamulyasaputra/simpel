@@ -1,0 +1,77 @@
+/* Custom Styles untuk Mahasiswa Dashboard */
+
+/* Card Hover Effect */
+.card-hover {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Row Hover */
+.table-row-hover:hover {
+    background-color: #f9fafb;
+}
+
+/* Status Badge */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+.status-open {
+    background-color: #fef3c7;
+    color: #d97706;
+}
+.status-progress {
+    background-color: #dbeafe;
+    color: #2563eb;
+}
+.status-resolved {
+    background-color: #d1fae5;
+    color: #059669;
+}
+.status-closed {
+    background-color: #e5e7eb;
+    color: #4b5563;
+}
+
+/* Chat Bubbles */
+.chat-bubble-user {
+    background-color: #dbeafe;
+    border-radius: 18px 18px 4px 18px;
+}
+.chat-bubble-petugas {
+    background-color: #f3f4f6;
+    border-radius: 18px 18px 18px 4px;
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 0.3s ease-in;
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.modal {
+    transition: all 0.3s ease;
+}
+
+/* Loading Spinner */
+.loading-spinner {
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3b82f6;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
